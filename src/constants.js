@@ -63,9 +63,9 @@ import ashatech from './assets/company_logo/ashatech.png';
 import AshaLearnology from './assets/work_logo/AshaLearnology.png';
 import AshaTech from './assets/work_logo/AshaTech.png';
 import Bemins from './assets/work_logo/Bemins.png';
-import keepnotes from './assets/work_logo/keepnotes.png';
 import sowhot from './assets/work_logo/sowhot.png';
 import WaveVisas from './assets/work_logo/WaveVisas.png';
+import TaskKeeper from './assets/work_logo/TaskKeeper.png';
 
 
 export const SkillsInfo = [
@@ -305,12 +305,12 @@ export const SkillsInfo = [
     // },
     {
       id: 8,
-      title: "keep-notes",
+      title: "Task Keeper",
       description:
-        "A minimalist Next-based note-taking app for quick capture and organization, featuring intuitive note creation, archiving, and deletion—perfect for keeping your thoughts handy.",
-      image: keepnotes,
-      tags: ["React", "HTML", "Tailwind", "Javascript"],
+        "A minimalist Next-based Task Keeper Manage Your Tasks web app for quick capture and organization, featuring intuitive note creation, archiving, and deletion—perfect for keeping your thoughts handy.",
+      image: TaskKeeper,
+      tags: ["Next.js", "HTML", "Tailwind", "Javascript", "Express", "MongoDB", "Nodejs", "REST APIs"],
       github: "https://github.com/Sdeepak9899",
-      webapp: "https://keep-notes-flax.vercel.app/",
+      webapp: "https://amankanojiya27-to-do.vercel.app/",
     },
   ];  
