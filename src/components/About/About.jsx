@@ -14,6 +14,25 @@ const About = () => {
     return months;
   };
 
+  const formatExperience = () => {
+    const totalMonths = calculateMonths();
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+    
+    let experienceText = "";
+    
+    if (years > 0) {
+      experienceText += `${years} Year${years > 1 ? 's' : ''}`;
+    }
+    
+    if (months > 0) {
+      if (experienceText) experienceText += " ";
+      experienceText += `${months} Month${months > 1 ? 's' : ''}`;
+    }
+    
+    return experienceText;
+  };
+
   return (
     <section
       id="about"
@@ -46,7 +65,7 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg lg:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a full-stack developer with over {calculateMonths()} months of
+            I am a full-stack developer with over {formatExperience()} of
             experience in building scalable web applications. Skilled in both
             front-end and back-end development, I specialize in the MERN stack
             and other modern technologies to create seamless user experiences
