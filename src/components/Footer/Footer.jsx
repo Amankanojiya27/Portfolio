@@ -1,7 +1,11 @@
-import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+// import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+
   // Smooth scroll function
   const handleScroll = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -14,7 +18,7 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">Deepak Sharma</h2>
+        <h2 className="text-xl font-semibold text-purple-500">Aman Kanojiya</h2>
 
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
@@ -38,8 +42,9 @@ const Footer = () => {
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaTwitter />, link: "https://x.com/DeepakS44947904" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/deepak-sharma-076990320/" },
+            // { icon: <FaTwitter />, link: "https://x.com/DeepakS44947904" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/aman-kanojiya-a8b259286/" },
+            { icon: <FaGithub />, link: "https://github.com/Amankanojiya27" },
             // { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
             
           ].map((item, index) => (
@@ -57,7 +62,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Deepak Sharma. All rights reserved.
+          © {currentYear} Aman Kanojiya. All rights reserved.
         </p>
       </div>
     </footer>
